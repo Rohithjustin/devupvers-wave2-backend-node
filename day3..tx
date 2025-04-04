@@ -1,0 +1,20 @@
+let userInput = prompt("Enter your name:");
+console.log("User entered:", userInput);
+
+<input type="text" id="userInput" placeholder="Enter something">
+<button onclick="getUserInput()">Submit</button>
+
+<script>
+    function getUserInput() {
+        let input = document.getElementById("userInput").value;
+        console.log("User entered:", input);
+    }
+</script>
+<input type="text" id="liveInput" placeholder="Type something...">
+<p id="output"></p>
+
+<script>
+    document.getElementById("liveInput").addEventListener("input", function() {
+        document.getElementById("output").innerText = this.value;
+    });
+</script>
