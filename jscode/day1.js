@@ -38,6 +38,6 @@ function displayinfo(a,b){
 //    return var1&&var2;
 // console.log(name)
 }
-let returnvalue = displayinfo(10,20);
+let returnvalue = displayinfo(10,20,);
 // console.log(returnvalue)
 
